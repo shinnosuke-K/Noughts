@@ -76,7 +76,7 @@ func main() {
 				fmt.Println("Winner Second!")
 				break
 			} else {
-				turn = 1
+				turn = 0
 				fmt.Print("First: ")
 			}
 		}
