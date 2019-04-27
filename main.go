@@ -4,7 +4,6 @@ import (
 	"fmt"
 )
 
-
 func drawBoard(board [3][3]string) {
 	fmt.Println("  0 1 2")
 	for i, line := range board {
@@ -35,8 +34,7 @@ func checkMarch(board [3][3]string, icon string) bool {
 
 */
 
-
-
+// Improvement point
 func countCell(board [3][3]string, icon string, x, y, dx, dy, count int) int {
 	//fmt.Println(x, y)
 	if x >= 0 && x <= 2 && y >= 0 && y <= 2 && board[x][y] == icon {
@@ -47,6 +45,7 @@ func countCell(board [3][3]string, icon string, x, y, dx, dy, count int) int {
 	}
 }
 
+// Improvement point
 func checkMatch(board [3][3]string, icon string, line, column, turn int) bool {
 	dr := [4][2]int{{-1, -1}, {0, -1}, {-1, 0}, {-1, 1}}
 	dl := [4][2]int{{1, 1}, {0, 1}, {1, 0}, {1, -1}}
